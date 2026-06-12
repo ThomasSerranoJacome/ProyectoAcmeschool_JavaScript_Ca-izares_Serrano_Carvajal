@@ -1,0 +1,181 @@
+@media (min-width: 720px) {
+
+}
+
+
+@media (min-width: 1024px) {
+    .header {
+        background-color: #ffffff;
+        padding: 5px 20px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header-div {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 15px;
+        color: #000000;
+        width: 100%;
+    }
+
+    .header-div button {
+    white-space: nowrap;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 5px 12px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 4px;
+    background-color: transparent;
+    }
+
+    .logo {
+        height: 80px;
+        margin-right: 10rem;
+        margin-left: 5rem;
+    }
+
+    .admin-nombre {
+        margin-right: auto;
+        margin-left: 35rem;
+    }
+
+    .boton-salir {
+        color: #000000;
+        border: 2px solid #000000;
+        padding: 5px 12px;
+        cursor: pointer;
+        font-size: 13px;
+        border-radius: 4px;
+        background-color: transparent;
+    }
+
+    .container-examenes {
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 10px auto;
+        margin-left: 10rem;
+        text-align: left;
+    }
+
+    .container-examenes p {
+        font-size: 18px;
+    }
+
+    .container-examenes h1 {
+        font-size: 30px;
+        margin: 10px auto;
+    }
+
+    .formulario {
+        background-color: #ffff;
+        max-width: 30%;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 8px;
+        margin-left: 12.5rem;
+    }
+
+    .formulario h2 {
+        text-align: left;
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .form-group {
+        
+        margin-bottom: 15px;
+        margin: 10px;
+    }
+
+    .form-group label {
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+
+    .form-group input {
+        border: 1px solid #000000;
+        border-radius: 4px;
+        padding: 4px;
+        width: 40%;
+    }
+
+    .form-group textarea {
+        border: 1px solid #000000;
+        border-radius: 4px;
+        padding: 4px;
+        width: 50%;
+    }
+
+    .tabla-container {
+        background: #ffffff;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        padding: 8px;
+        margin: 8px auto;
+        max-width: 40%;
+        margin-left: 50rem;
+    }
+
+    .tabla-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .tabla-header h2 {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--text);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+    }
+
+    thead tr {
+        border-bottom: 2px solid var(--border);
+    }
+
+    th {
+        text-align: left;
+        padding: 10px;
+        font-weight: 600;
+        color: var(--text-muted);
+    }
+
+    td {
+        padding: 10px;
+        border-bottom: 1px solid var(--border);
+        color: var(--text);
+    }
+
+    tr:last-child td {
+        border-bottom: none;
+    }
+
+
+    .preguntas-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    #btnAgregarPregunta {
+        background-color: var(--bg);
+        color: var(--text);
+        border-radius: 4px;
+        border: 1px solid var(--border);
+        font-size: 12px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+}

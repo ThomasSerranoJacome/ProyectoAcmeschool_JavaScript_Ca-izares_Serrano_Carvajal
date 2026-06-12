@@ -20,4 +20,5 @@
 
 body {
   background: var(--bg);
+  overflow-x: hidden;
 }

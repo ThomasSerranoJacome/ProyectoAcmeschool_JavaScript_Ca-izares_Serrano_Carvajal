@@ -1,6 +1,6 @@
 .header {
     background-color: #ffff;
-    padding: 0 20px;
+    padding: 0 10px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -10,15 +10,30 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    max-width: 60%;
-    gap: 10px;
+    max-width: 40%;
+    gap: 8px;
     font-size: 10px;
     text-align: center;
     color:#000000;
 }
 
+.header-div button {
+    white-space: nowrap;
+    color: #000000;
+    border: 2px solid #000000;
+    cursor: pointer;
+    font-size: 9px;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 3px 5px;
+    }
+
 .logo {
-    height: 60px;
+    height: 50px;
+}
+
+.admin-nombre {
+    font-size: 8px;
 }
 
 .boton-salir {
@@ -29,7 +44,7 @@
     font-size: 10px;
     border-radius: 4px;
     background-color: transparent;
-    margin-left: 30px;
+    margin-left: 3px;
 }
 
 .container-examenes {
