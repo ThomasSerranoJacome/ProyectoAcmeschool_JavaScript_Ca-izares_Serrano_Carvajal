@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary:       #2563c4;
+  --primary-dark:  #1B4F8A;
+  --primary-mid:   #4A90D9;
+  --primary-light: #DBEAFE;
+
+  --bg:            #F0F5FF;
+  --surface:       #FFFFFF;
+  --border:        #BFCFE8;
+  --text:          #1B4F8A;
+  --text-muted:    #5B7BA8;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: var(--bg);
+  overflow-x: hidden;
+}
+
+.mi-formulario {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+
+
