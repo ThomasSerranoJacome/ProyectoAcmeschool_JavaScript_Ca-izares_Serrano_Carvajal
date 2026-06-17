@@ -1,0 +1,195 @@
+.header {
+    background-color: #ffff;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 98, 255, 0.564);
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 40%;
+    gap: 8px;
+    font-size: 10px;
+    text-align: center;
+    color:#000000;
+}
+
+.header-div button {
+    white-space: nowrap;
+    color: #000000;
+    border: 2px solid #000000;
+    cursor: pointer;
+    font-size: 9px;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 3px 5px;
+    }
+
+.logo {
+    height: 50px;
+}
+
+.admin-nombre {
+    font-size: 8px;
+}
+
+.boton-salir {
+    color: rgb(0, 0, 0);
+    border: 2px solid #000000;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 10px;
+    border-radius: 4px;
+    background-color: transparent;
+    margin-left: 3px;
+}
+
+.container-usuarios {
+    max-width: 100%;
+    margin: 1px auto;
+    padding: 40px;
+    text-align: left;
+}
+
+.container-usuarios p {
+    font-size: 13px;
+}
+
+.container-usuarios h1 {
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+.formulario-usuarios {
+    background-color: #ffff;
+    max-width: 90%;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 8px;
+    margin-top: 1px;
+    box-shadow: 0 2px 10px rgba(0, 98, 255, 0.564);
+}
+
+.formulario-usuarios h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-group-usuarios {
+    margin-bottom: 15px;
+}
+
+.form-group-usuarios label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.form-group-usuarios input {
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 4px;
+    width: 80%;
+    box-shadow: 0 2px 10px rgba(0, 98, 255, 0.564);
+}
+
+.form-group-usuarios select {
+    border: 2px solid #000000;
+    border-radius: 4px;
+    padding: 4px;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 98, 255, 0.564);
+}
+
+.tabla-container-usuarios {
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 85%;
+    box-shadow: 0 2px 10px rgba(0, 98, 255, 0.564);
+}
+
+.tabla-header-usuarios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tabla-header-usuarios h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+thead tr {
+    border-bottom: 2px solid var(--border);
+}
+
+th {
+    text-align: left;
+    padding: 10px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 718px) {
+    .tabla-container-usuarios {
+        overflow-x: auto;
+    }
+}
+
+.preguntas-header-usuarios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#btnAgregarPregunta-usuarios {
+    background-color: var(--bg);
+    color: var(--text);
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+#btnCrearUsuario {
+    background-color: var(--bg);
+    color: var(--text);
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    font-size: 12px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.form-group-usuarios select {
+    border: 2px solid #000000;
+    border-radius: 4px;
+    padding: 4px;
+    width: 82.5%;
+    }

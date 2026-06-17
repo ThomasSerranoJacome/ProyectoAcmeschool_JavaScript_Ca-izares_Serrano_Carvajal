@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME SCHOOL</title>
+    <link rel="stylesheet" href="./usuarios.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./responsive-usuarios.css">
+    <link rel="stylesheet" href="./responsive-usuarios2.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-div">
+            <img class="logo" src="./assets/Logo.png" alt="Acme School" height="100" />
+            <button>Resolver Examen</button>
+            <button>Usuarios</button>
+            <button>Examenes</button>
+            <p class="admin-nombre">Adiministrador Acme</p>
+            <button class="boton-salir">Salir</button>
+        </div>
+            
+    </header>
+
+    <main>
+
+        
+            <div class="container-usuarios">
+                <p>Administracion</p>
+                <h1>Gestion de Usuarios</h1>
+                <p><span style="color: #2462aa;">Crea, actualiza y elimina cuentas con acceso a los modulos privados.</span></p>
+            </div>
+
+                <section class="usuarios-section">
+                    <div class="formulario-usuarios">
+                        <h2>Crear Usuario</h2>
+                        <div class="fila-formulario-usuarios">
+                            <div class="form-group-usuarios">
+                                <label for="Identificacion">Numero de identificacion</label>
+                                <input type="text" id="codigo" placeholder="" />
+                            </div>
+                            <div class="form-group-usuarios">
+                                <label for="Nombre">Nombre Completo</label>
+                                <input type="text" id="titulo" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="fila-formulario-usuarios">
+                            <div class="form-group-usuarios">
+                                <label for="Email">Email</label>
+                                <input type="text" id="tiempo" placeholder="Ej: thomaS@gmail.com" />
+                            </div>
+                            <div class="form-group-usuarios">
+                                <label for="Telefono">Telefono</label>
+                                <input type="number" id="porcentaje" placeholder="Ej: 3106661234" />
+                            </div>
+                        </div>
+                        <div class="fila-formulario-usuarios">
+                            <div class="form-group-usuarios">
+                                <label for="cargo">Cargo</label>
+                                <select id="cargo">
+                                    <option value="">Seleccionar cargo</option>
+                                    <option value="administrativo">Administrativo</option>
+                                    <option value="docente">Docente</option>
+                                </select>                                
+                            </div>
+                            <div class="form-group-usuarios">
+                                <label for="Contraseña">Contraseña</label>
+                                <input type="password" id="porcentaje" placeholder="" />
+                            </div>
+                        </div>
+                        
+                        <div class="preguntas-section-usuarios">
+                            <div class="preguntas-header-usuarios">
+                                <button id="btnCrearUsuario"><span style="color: #2d7dd8;">Crear Usuario</span></button>
+                                <button id="btnAgregarPregunta-usuarios">Limpiar</button>
+                            </div>
+                            <div id="contenedorPreguntas-usuarios"></div>
+                        </div>
+                    </div>
+                    <div class="tabla-container-usuarios">
+                        <div class="tabla-header-usuarios">
+                            <h2>Usuarios registrados</h2>
+                            <span class="badge" id="contadorUsuarios">0 registros</span>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Identificacion</th>
+                                    <th>Nombre</th>
+                                    <th>Email</th>
+                                    <th>Cargo</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tablaExamenes"></tbody>
+                        </table>
+                    </div>
+                </section>
+
+    </main>
+    <script src="./usuarios.js" ></script>
+</body>
+</html>

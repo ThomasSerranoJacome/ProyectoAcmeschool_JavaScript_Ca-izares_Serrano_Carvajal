@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acme School – Exams Platform</title>
+  <link rel="stylesheet" href="./login.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="topnav">
+    <div class="topnav__brand">
+      <img class="topnav__logo-img" src="logo.png" alt="Acme School – Escuela Platero" />
+    </div>
+    <div class="topnav__links">
+      <a href="resolver.html" class="topnav__link">Resolver examen</a>
+      <button class="topnav__btn--active">Login</button>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="login-layout">
+
+    <!-- LEFT HERO -->
+    <div class="hero">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <span class="hero__eyebrow">MÓDULO PRIVADO</span>
+        <h1 class="hero__headline">
+          Gestiona usuarios<br />y examenes con<br />una cuenta<br />autorizada.
+        </h1>
+        <p class="hero__body">
+          Ingresa para administrar el banco de examenes de Acme School. Los
+          estudiantes pueden resolver pruebas desde el módulo público.
+        </p>
+      </div>
+    </div>
+
+    <!-- RIGHT CARD -->
+    <div class="card-wrap">
+      <!-- Web Component -->
+      <acme-login-form></acme-login-form>
+    </div>
+
+  </main>
+
+  <!-- Footer hint -->
+  <div class="public-hint">Acceso público</div>
+
+  <script type="module" src="./login.js"></script>
+</body>
+</html>
