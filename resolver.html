@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme School - Resolver Exámenes</title>
+    <link rel="stylesheet" href="./css/resolver.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">📚</span>
+                    <span class="logo-text">Acme School</span>
+                </div>
+                <nav class="nav-tabs">
+                    <button class="tab-btn active">Resolver examen</button>
+                    <button class="tab-btn">Mis resultados</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Vista de Selección de Examen -->
+            <section id="examenSelection" class="selection-view">
+                <div class="banner">
+                    <div class="banner-content">
+                        <span class="banner-label">MÓDULO PÚBLICO</span>
+                        <h1 class="banner-title">Selecciona un examen disponible</h1>
+                        <p class="banner-subtitle">Elige una prueba, registra tus datos y responde dentro del tiempo establecido.</p>
+                    </div>
+                </div>
+
+                <div class="examen-grid">
+                    <!-- Examen 1: Fundamentos de JavaScript -->
+                    <div class="examen-card">
+                        <div class="card-badge">JS 101</div>
+                        <h3 class="card-title">Fundamentos de JavaScript</h3>
+                        <p class="card-description">Evalúa conocimientos básicos de variables, funciones, arrays y DOM</p>
+                        
+                        <div class="card-stats">
+                            <div class="stat">
+                                <span class="stat-label">Duración</span>
+                                <span class="stat-value">30 min</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Aprobatorio</span>
+                                <span class="stat-value">70%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Preguntas</span>
+                                <span class="stat-value">15</span>
+                            </div>
+                        </div>
+
+                        <button class="btn-presentar" onclick="iniciarExamen(1)">Presentar</button>
+                    </div>
+
+                    <!-- Examen 2: HTML & CSS -->
+                    <div class="examen-card">
+                        <div class="card-badge">WEB 201</div>
+                        <h3 class="card-title">HTML & CSS Avanzado</h3>
+                        <p class="card-description">Prueba tus habilidades en maquetación, flexbox, grid y responsive design</p>
+                        
+                        <div class="card-stats">
+                            <div class="stat">
+                                <span class="stat-label">Duración</span>
+                                <span class="stat-value">45 min</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Aprobatorio</span>
+                                <span class="stat-value">75%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Preguntas</span>
+                                <span class="stat-value">12</span>
+                            </div>
+                        </div>
+
+                        <button class="btn-presentar" onclick="iniciarExamen(2)">Presentar</button>
+                    </div>
+
+                    <!-- Examen 3: React Básico -->
+                    <div class="examen-card">
+                        <div class="card-badge">REACT 101</div>
+                        <h3 class="card-title">React - Conceptos Básicos</h3>
+                        <p class="card-description">Componentes, hooks, estado y ciclo de vida en React</p>
+                        
+                        <div class="card-stats">
+                            <div class="stat">
+                                <span class="stat-label">Duración</span>
+                                <span class="stat-value">40 min</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Aprobatorio</span>
+                                <span class="stat-value">75%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Preguntas</span>
+                                <span class="stat-value">14</span>
+                            </div>
+                        </div>
+
+                        <button class="btn-presentar" onclick="iniciarExamen(3)">Presentar</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Vista de Resolución de Examen -->
+            <section id="examenResolution" class="resolution-view hidden">
+                <div class="resolution-header">
+                    <div class="resolution-info">
+                        <button class="btn-volver" onclick="volverASeleccion()">← Volver</button>
+                        <h2 id="examenTitle"></h2>
+                    </div>
+                    <div class="timer">
+                        <span id="timerDisplay">30:00</span>
+                    </div>
+                </div>
+
+                <div class="resolution-container">
+                    <div class="preguntas-sidebar">
+                        <h3>Preguntas</h3>
+                        <div id="preguntasNav" class="preguntas-nav"></div>
+                    </div>
+
+                    <div class="pregunta-container">
+                        <div id="preguntaContent"></div>
+                        
+                        <div class="navigation-buttons">
+                            <button id="btnAnterior" class="btn-secondary" onclick="preguntaAnterior()" disabled>Anterior</button>
+                            <button id="btnSiguiente" class="btn-primary" onclick="preguntaSiguiente()">Siguiente</button>
+                            <button id="btnEnviar" class="btn-primary hidden" onclick="enviarExamen()">Enviar Examen</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="./js/resolver.js"></script>
+</body>
+</html>

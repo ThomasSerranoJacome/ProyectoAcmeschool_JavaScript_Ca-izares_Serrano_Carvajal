@@ -21,13 +21,3 @@
 body {
   background: var(--bg);
   overflow-x: hidden;
-}
-
-.mi-formulario {
-  max-width: 600px;
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
-}
-
-
-
