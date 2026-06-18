@@ -88,6 +88,6 @@ ProyectoAcmeschool_JavaScript_Ca-izares_Serrano_Carvajal/
 
 ## Autores
 
-- **Cañizares** — Módulo de Resolución de Exámenes
-- **Serrano** — Gestión de Exámenes + Gestión de Usuarios
-- **Carvajal** — Login + Auth
+- **Juliana Cañizares** — Módulo de Resolución de Exámenes
+- **Thomas Serrano** — Gestión de Exámenes + Gestión de Usuarios
+- **Jose Carvajal** — Login + Auth
