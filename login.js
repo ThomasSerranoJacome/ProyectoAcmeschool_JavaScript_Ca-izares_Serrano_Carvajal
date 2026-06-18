@@ -1,13 +1,11 @@
-/**
- * login.js – Acme School
- * Defines the <acme-login-form> Web Component and wires up the login flow.
- */
-
 import { isValidEmailFormat, isFreeEmailDomain, attemptLogin, getSession } from './auth.js';
+
+// ── Borrar sesión al llegar desde logout ─────────────────────
+sessionStorage.removeItem('acme_session');
 
 // ── Redirect if already logged in ───────────────────────────
 if (getSession()) {
-  window.location.href = 'examenes.html';
+  window.location.href = 'login.html';
 }
 
 // ── Web Component ────────────────────────────────────────────
