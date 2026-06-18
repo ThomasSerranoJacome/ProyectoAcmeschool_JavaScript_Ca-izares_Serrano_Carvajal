@@ -170,6 +170,10 @@ function guardarExamen() {
             alert(`La pregunta ${i + 1} no tiene texto.`);
             return;
         }
+        if (preguntas[i].respuestas.length < 2) {
+            alert(`La pregunta ${i + 1} debe tener mínimo 2 respuestas.`);
+            return;
+        }
         if (!preguntas[i].respuestas.some(r => r.correcta)) {
             alert(`La pregunta ${i + 1} no tiene una respuesta correcta marcada.`);
             return;

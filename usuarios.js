@@ -69,6 +69,11 @@ document.getElementById('btnCrearUsuario').addEventListener('click', () => {
         return;
     }
 
+    if (password && password.length < 8) {
+    alert('La contraseña debe tener mínimo 8 caracteres.');
+    return;
+    }
+
     if (!editandoId && !password) {
         alert('La contraseña es obligatoria para nuevos usuarios.');
         return;
