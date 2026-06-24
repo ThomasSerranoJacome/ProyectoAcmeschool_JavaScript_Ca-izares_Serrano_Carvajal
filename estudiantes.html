@@ -56,6 +56,25 @@
                                 <input type="number" id="porcentaje" placeholder="Ej: 60" min="1" max="100" />
                             </div>
                         </div> 
+
+                        <div class="tabla-container">
+                        <div class="tabla-header">
+                            <h2>Examenes registrados</h2>
+                            <span class="badge" id="contadorExamenes">0 registros</span>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Codigo</th>
+                                    <th>Examen</th>
+                                    <th>Aprobacion</th>
+                                    <th>Numero de Estudiantes</th>
+                                    <th>Promedio Porcentajes</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tablaExamenes"></tbody>
+                        </table>
+                    </div>
 </main>
     <script src="./estudiantes.js" ></script>
 </body>
