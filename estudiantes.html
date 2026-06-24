@@ -25,57 +25,27 @@
     </header>
 
     <main>
-
-        
-            <div class="container-examenes">
-                <p>Banco de pruebas</p>
-                <h1>Reporte de Estadisticas</h1>
-                <p><span style="color: #2462aa;">Reporte donde puede visualizar la siguiente información:</span></p>
-            </div>
-
-                <section class="examenes-section">
-                    <div class="formulario">
-                        <h2>Examenes</h2>
-                        <div class="fila-formulario">
-                            <div class="form-group">
-                                <label for="codigo">Código</label>
-                                <input type="text" id="codigo" placeholder="Ej: EX01" />
-                            </div>
-                            <div class="form-group">
-                                <label for="titulo">Título</label>
-                                <input type="text" id="titulo" placeholder="" />
-                            </div>
-                        </div>
-                        <div class="fila-formulario">
-                            <div class="form-group">
-                                <label for="tiempo">Numero de estudiantes que realizaron el examen</label>
-                                <input type="number" id="tiempo" placeholder="Ej: 30" min="1" max="10" />
-                            </div>
-                            <div class="form-group">
-                                <label for="porcentaje">Promedio de los porcentajes sacados por los estudiantes.</label>
-                                <input type="number" id="porcentaje" placeholder="Ej: 60" min="1" max="100" />
-                            </div>
-                        </div> 
-
+                    <section class="estudiantes-section">
                         <div class="tabla-container">
-                        <div class="tabla-header">
-                            <h2>Examenes registrados</h2>
-                            <span class="badge" id="contadorExamenes">0 registros</span>
+                            <div class="tabla-header">
+                                <h2>Examenes registrados</h2>
+                                <span class="badge" id="contadorExamenes">0 registros</span>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Codigo</th>
+                                        <th>Examen</th>
+                                        <th>Aprobacion</th>
+                                        <th>Numero de Estudiantes</th>
+                                        <th>Promedio Porcentajes</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tablaExamenes"></tbody>
+                            </table>
                         </div>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Codigo</th>
-                                    <th>Examen</th>
-                                    <th>Aprobacion</th>
-                                    <th>Numero de Estudiantes</th>
-                                    <th>Promedio Porcentajes</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tablaExamenes"></tbody>
-                        </table>
-                    </div>
-</main>
+                    </section>    
+    </main>
     <script src="./estudiantes.js" ></script>
 </body>
 </html>
